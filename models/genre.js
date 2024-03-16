@@ -1,11 +1,10 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
-var GenreSchema = new Schema(
-  {}
-);
-
+var GenreSchema = new Schema({
+  genre: { type: String, maxLength: 100 },
+});
 
 //Export model
-module.exports = mongoose.model('Genre', GenreSchema);
+module.exports = mongoose.model("Genre", GenreSchema);
